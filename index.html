@@ -18,6 +18,23 @@
        </h4>
     </div>
 
-    <div class="box"></div>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <select id="studentDropdown">
+            <option value="" disabled selected>Select a student</option>
+            <option value="student1">John Doe</option>
+            <option value="student2">Jane Smith</option>
+            <option value="student3">Alice Johnson</option>
+            <option value="student4">Bob Lee</option>
+        </select>
+    </div>
+    <script>
+        document.getElementById('studentDropdown').addEventListener('change', function() {
+            const selected = this.options[this.selectedIndex];
+            if (selected.value) {
+                alert('You clicked on: ' + selected.text);
+            }
+        });
+    </script>
+
 </body>
 </html>
