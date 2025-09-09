@@ -6,38 +6,97 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#container{
-    margin: 5px 5px;
-    border: red 2px solid ;
-    width: 99.2%;
-    height: auto;
-    display: block;
-    text-align: center;
+body{
+    background: black;
+    color: white;
 }
 
-#container h1{
+.mfilogo{
+    width: 50px;
+    height: 50px;
+}
+
+#header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding-left: 60px;
+    padding-top: 10px;
+    background-color: white;
+    position: fixed;  /* ✅ makes it stay at the top */
+    top: 0;           /* stick to top of page */
+    left: 0;
+    z-index: 1000;    /* higher = in front */
+    transition: top 0.3s; /* smooth hide/show */
+}
+
+.header-text{
+    padding-bottom: 5px;
+    margin: 0px 10px;
+    color: rgb(6, 55, 110);
+}
+
+.header-text h1{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.header-text h3{
+    font-size: medium;
+    font-weight: 500;
+    color: rgb(33, 79, 121);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-left: 20px;
+    line-height: 100px;
+    float: left;
+}
+
+#first-container{
+    margin-top: 50px;
+    width: 100%;
+    height: 90vh;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    background: url(images/minimalbg.jpg)no-repeat center ; 
+    background-size: cover;
+
+}
+
+#first-container h1{
     margin-bottom: 5px;
     font-size: 4rem;
-    color: rgb(33, 79, 121);
+    color: rgb(62, 142, 217);
+    text-shadow: 2px 4px 5px rgb(62, 36, 36);
     font-family: 'Script MT Bold', cursive, sans-serif;
 }
 
-#container h2{
+#first-container h2{
     margin-bottom: 5px;
     font-size: 3.5rem;
+    text-shadow: 2px 3px 5px rgb(62, 36, 36);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(171, 49, 40);
+    color: rgba(244, 25, 10, 0.861);
 }
 
-#container h3{
+#first-container h3{
     margin-bottom: 5px;
     font-size: 2.2rem;
+    text-shadow: 2px 2px 3px black;
     font-weight: initial;
 
 }
 
-#container h4{
+#first-container h4{
     font-size: 1.8rem;
+    text-shadow: 2px 2px 3px black;
     font-weight: initial;
 }
 
